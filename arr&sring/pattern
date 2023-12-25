@@ -1,0 +1,15 @@
+public static int findPattern(String s, String p){
+    // code here
+    int sLen = s.length();
+    int pLen = p.length();
+
+    for (int i = 0; i <= sLen - pLen; i++) {
+        // Check if substring starting at index i in s matches pattern p
+        if (s.substring(i, i + pLen).equals(p)) {
+            return i;  // Pattern found at index i
+        }
+    }
+
+    return -1;
+    
+}

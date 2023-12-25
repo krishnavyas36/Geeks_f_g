@@ -1,0 +1,11 @@
+public static String reverseString(String s){
+    // code here
+    int i = s.length()-1;
+    String n_s = "";
+    while(i>=0){
+        n_s = n_s + s.charAt(i);
+        i--;
+    }
+    return n_s;
+    
+}
